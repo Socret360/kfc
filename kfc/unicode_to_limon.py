@@ -5,6 +5,12 @@ from .utils import legacy_reorder
 def unicode_to_limon(text):
     """ convert a string in unicode format to limon """
     text = re.sub(r"ញ្ញ", "BaØ", text)
+    text = re.sub(r'ខ្ញុំ', '´', text)
+    text = re.sub(r'ឫ', 'ប£', text)
+    text = re.sub(r'ឬ', 'ប¤', text)
+    text = re.sub(r'ឭ', 'ព£', text)
+    text = re.sub(r'ឮ', 'ព¤', text)
+    text = re.sub(r'ឰ', 'ព្ធ', text)
     #
     text = legacy_reorder.reorder(text)
     #
@@ -114,7 +120,6 @@ def unicode_to_limon(text):
     text = re.sub(r'៎', '+', text)
     text = re.sub(r'៍', '_', text)
     text = re.sub(r'ិ៍', '×', text)
-    text = re.sub(r'ខ្ញុំ', '´', text)
     text = re.sub(r'។', '.', text)
     text = re.sub(r'\(', '¬', text)
     text = re.sub(r'\)', '¦', text)
@@ -130,11 +135,6 @@ def unicode_to_limon(text):
     text = re.sub(r'-', '-', text)
     text = re.sub(r'!', '¡', text)
     text = re.sub(r'៛', '¹', text)
-    text = re.sub(r'ឫ', 'ប£', text)
-    text = re.sub(r'ឬ', 'ប¤', text)
-    text = re.sub(r'ឭ', 'ព£', text)
-    text = re.sub(r'ឮ', 'ព¤', text)
-    text = re.sub(r'ឰ', 'ព្ធ', text)
     #
     text = re.sub(r'ឥ', r'\\',  text)
     text = re.sub(r'ឦ', '|',  text)
