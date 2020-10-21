@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
     name='kfc',
-    packages=['kfc'],
-    version='0.1',
+    packages=['kfc', 'kfc/utils'],
+    version='0.2',
     license='GNU General Public License v3.0 or later (GPL-3.0-or-later)',
     description='A library to convert khmer unicode text to limon format and vice versa',
     author='Socret Lee',

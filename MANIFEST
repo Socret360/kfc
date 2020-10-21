@@ -4,3 +4,5 @@ setup.py
 kfc/__init__.py
 kfc/limon_to_unicode.py
 kfc/unicode_to_limon.py
+kfc/utils/__init__.py
+kfc/utils/legacy_reorder.py
