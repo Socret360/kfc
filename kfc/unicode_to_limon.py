@@ -143,4 +143,6 @@ def unicode_to_limon(text):
     text = re.sub(r'ឪ', '«',  text)
     text = re.sub(r'ឯ', 'É',  text)
     text = re.sub(r'ឱ', '»',  text)
+    # clean up
+    text = re.sub('\u17ea', '', text)
     return text
