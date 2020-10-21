@@ -11,6 +11,7 @@ def unicode_to_limon(text):
     text = re.sub(r'ឭ', 'ព£', text)
     text = re.sub(r'ឮ', 'ព¤', text)
     text = re.sub(r'ឰ', 'ព្ធ', text)
+    text = re.sub(r'៊ី', 'uI', text)
     #
     text = legacy_reorder.reorder(text)
     #
